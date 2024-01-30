@@ -1,0 +1,5 @@
+aiohttp
+azure-functions
+azure-storage-blob
+fastapi[all]
+python-multipart
