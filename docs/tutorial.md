@@ -262,7 +262,8 @@ except Exception as ex:
 
 That is the code that connects to the storage account, creates a container and tries to upload a file to it.
 
-Lastly, we need to add some HTML code to make a basic, ugly HTML webpage that we can use as our frontend and GUI
+Lastly, we need to add some HTML code to make a basic, ugly HTML webpage that we can use as our frontend and GUI.
+This includes a section to upload and submit an image. Once an image is selected, it is automatically displayed before the user can proceed to submit it to the blob storage.
 
 ```
 @app.get('/')
@@ -271,9 +272,28 @@ async def main():
     <body>
     <h1>Upload file to a container inside Azure Blob Storage</h1>
     <form action="/uploadfile" enctype="multipart/form-data" method="post">
-    <input name="file" type="file">
+    <input name="file" type="file" id="fileInput" onchange="previewImage()">
     <input type="submit">
     </form>
+    <!-- Display the uploaded image -->
+    <div id="imageContainer">
+        <h2>Selected image:</h2>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display:none; max-width: 400px;">
+    </div>
+    <script>
+        function previewImage() {
+            var input = document.getElementById('fileInput');
+            var image = document.getElementById('uploadedImage');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    image.src = e.target.result;
+                    image.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
     </body>
     """
     return HTMLResponse(content=content)
