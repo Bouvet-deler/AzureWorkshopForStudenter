@@ -53,9 +53,28 @@ async def main():
     <body>
     <h1>Upload file to a container inside Azure Blob Storage</h1>
     <form action="/uploadfile" enctype="multipart/form-data" method="post">
-    <input name="file" type="file">
+    <input name="file" type="file" id="fileInput" onchange="previewImage()">
     <input type="submit">
     </form>
+    <!-- Display the uploaded image -->
+    <div id="imageContainer">
+        <h2>Selected image:</h2>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display:none; max-width: 400px;">
+    </div>
+    <script>
+        function previewImage() {
+            var input = document.getElementById('fileInput');
+            var image = document.getElementById('uploadedImage');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    image.src = e.target.result;
+                    image.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
     </body>
     """
     return HTMLResponse(content=content)
