@@ -1,7 +1,7 @@
 ## Azure Playlist Function Guide
 
 # Requirements 
-- An Azure student account with 
+- An Azure student account 
 - Python 3.9
 - Visual Studio Code
 - The Python Extention for Visual Studio Code
@@ -18,14 +18,14 @@ Go to this site and follow the steps until "Clean up the resources"
 # Getting started with Spotify
 1. Go to https://developer.spotify.com/
 2. Log in with your Spotify account
-3. Go to Dashboar, click on Create an app button and enter the following:
+3. Go to Dashboard, click on Create an app button and enter the following:
     - App Name: My App
     - App Description: This is my first Spotify app
     - Website: The local host for your Azure function. Find it by running your Azure Funciton: Run -> Start Debugging. In the terminal you can find the correct URL
-    - Ridirect URI: Equal as website
+    - Redirect URI: Same as website
     - Which API/SDKs are you planning to use : Web API
 4. Save
-5. Dashboard => Click on your app=>  Settings 
+5. Dashboard => Click on your app =>  Settings 
 In settings you can find the Client ID and Client secret you will need to connect you Azure function to Spotify. 
 
 
