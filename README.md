@@ -1,11 +1,16 @@
 # Vanskelig å ta små valg raskt?
 Hvis du sliter med å ta små hverdagsvalg så er dette lille prosjektet for deg!  
-Stopper du ofte opp med å tenke hva du skal ha til middag? Eller hvilken pils du skal drikke ikveld? Eller bare et generelt 50/50 valg, hvor du vil flippe en mynt, men hvem går rundt med mynter idag?  
+Stopper du ofte opp med å tenke hva du skal ha til middag? Eller hvilken pils du skal drikke ikveld? Eller bare et generelt 50/50 valg, hvor du bare vil flippe en mynt, men hvem går vel rundt med mynter idag?  
   
 I dette prosjektet skal du lage en liste over mulige utfall i et valg, også skal scriptet returnere et tilfeldig utfall til deg.  
 Dette skal også med Azure functions slik at du alltid vil ha mulighet til å spørre "skyen" om hva du burde velge.
 
 ## Hvordan komme igang
+###
+Denne guiden er skrevet i C#. et programmeringsspråk som ligner veldig på java.
+Får å kjøre dette lokalt kan du laste ned .Net herfra https://dotnet.microsoft.com/en-us/download
+.Net lar deg kjøre C#-
+
 ### Følg guiden i lenken under
 https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/5-create-function-visual-studio-code  
 NB! Hvis du får problemer med at VSCode ikke gjenkjenner Microsoft pakkene etter å ha installert alt, prøv å lukke hele VSCode og starte på nytt.  
@@ -46,7 +51,7 @@ string responseMessage = string.IsNullOrEmpty(name)
 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 ```
 
-Neste steg er å lage listene med utfall. Å lage lister i C# ser slik ut:
+Neste steg er å lage listene med utfall. Du skal lage en liste med ting å velge mellom, og legge den istedet for det du nettopp slettet. Å lage lister i C# ser slik ut:
 ```
 var mat = new List<string>{ "Pizza","Taco","Pasta","Børek","Kebab","Brød"};          
 ```
