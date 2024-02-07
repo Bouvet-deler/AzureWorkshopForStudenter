@@ -21,7 +21,7 @@ Go to this site and follow the steps until "Clean up the resources"
 3. Go to Dashboard, click on Create an app button and enter the following:
     - App Name: My App
     - App Description: This is my first Spotify app
-    - Website: The local host for your Azure function. Find it by running your Azure Funciton: Run -> Start Debugging. In the terminal you can find the correct URL
+    - Website: The url where your Azure function runs. Find it by running your Azure Funciton: Run -> Start Debugging. In the terminal you can find the correct URL
     - Redirect URI: Same as website
     - Which API/SDKs are you planning to use : Web API
 4. Save
