@@ -24,7 +24,7 @@ Some links that can be important to remember/keep open
 
 First and foremost, we need to create a workspace.
 
-Create a folder whereever you like with an appropriate name, such as _Bouvet-bedpres-2024_.
+Create a folder wherever you like with an appropriate name, such as _Bouvet-bedpres-2024_.
 
 Open Visual Studio Code (referred to as VSCode) and open the folder you created inside VSCode (CTRL+K+O on Windows and CMD+O on Mac). Create a Python file (CTRL+N on Windows and CMD+N on Mac) inside the folder and name it _upload_file_to_azure_storage.py_.
 
@@ -42,9 +42,9 @@ There are a multitude of things that you can do, but we will do two thing; creat
 
 ### Create Azure Resource Group
 
-Azure Resource Group is a collection of resources. Usually, a resource group contains resources that have something to do with eachother. But, you might wonder; what is a _resource_? A resource can be though of as a service that Azure provides for you. One resource that Azure provides, that you might have heard of is virtual machines. Instead of having to use your computer's hardware to run a virtual machine, Microsoft uses its computers, or rather servers, to host a virtual machine for you. You only need to create it based on your needs and install the software and tools that you need.
+Azure Resource Group is a collection of resources. Usually, a resource group contains resources that have something to do with eachother. But, you might wonder; what is a _resource_? A resource can be thought of as a service that Azure provides for you. One resource that Azure provides, that you might have heard of is virtual machines. Instead of having to use your computer's hardware to run a virtual machine, Microsoft uses its computers, or rather servers, to host a virtual machine for you. You only need to create it based on your needs and install the software and tools that you need.
 
-So, lets start by creating a resource group. From the home page you can see that on the top of the screen, next to the large **+** icon, there is a Tesseract like object that says Resource groups. Click on it (and the world will not end).
+So, lets start by creating a resource group. From the home page you can see that on the top of the screen, next to the large **+** icon, there is a Tesseract-looking object that says Resource groups. Click on it (and the world will not end).
 
 Now you are transported to a rather empty page. At the top right corner, under the header Resource groups, there is a button that says **+ Create**. Press it.
 
@@ -343,7 +343,7 @@ Now, this code is running on your computer. Which means that you have to start i
 
 ## Azure Functions
 
-Firstly, lets stop the locally running code by pressing CTRL+C (CDM on macOS) in the terminal.
+Firstly, lets stop the locally running code by pressing CTRL+C (CMD on macOS) in the terminal.
 
 What is Azure Functions? Azure Functions is something that runs your code for you based on some events or triggers. It is not run locally on your machine (but we will start with that), it uses the capabilities of the cloud to run the code.
 
@@ -374,7 +374,7 @@ A window will pop-up asking if you want to overwrite the existing _requirements.
 
 If you look inside the directory, there are now many new files, where the most important is _function_app.py_. This is the file that Azure Functions will run.
 
-Remove everything that is insde the _function_app.py_ file and replace it with
+Remove everything that is inside the _function_app.py_ file and replace it with
 
 ```
 import azure.functions as func
@@ -468,7 +468,7 @@ Then you can press **Debug Anyways**
 
 Just like earlier, copy and paste the URL into a browser or hold CTRL (CMD on macOS) and click on the link.
 
-The webpage that you are seeing is probably saying something like **This localhost page can't be found**. That is fine. If we look at the URL, it is kind of wierd. Remove everything after 7071, **except** for one backslash, so the URL becomes http://localhost:7071/ (remember, that your URL might be different). I usually do this inside the browser.
+The webpage that you are seeing is probably saying something like **This localhost page can't be found**. That is fine. If we look at the URL, it is kind of weird. Remove everything after 7071, **except** for one backslash, so the URL becomes http://localhost:7071/ (remember, that your URL might be different). I usually do this inside the browser.
 
 And look at that, the same webpage as earlier appears. Lets try and upload a file again and verify by going to the Azure portal to see that the file has been uploaded inside your container.
 
