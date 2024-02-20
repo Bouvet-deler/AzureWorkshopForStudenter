@@ -28,7 +28,7 @@ def show_dancesongs_in_playlist(playlist, sp):
 # make prettier
 def write_to_playlist(playlist):
     string_with_text = "<html>\n<head>\n<title> \nOutput Data in an HTML file\n \
-           </title>\n</head> <body> <h1>Danceability playlist with URI </h1>\n \
+           </title>\n</head> <body> <h1>Danceability playlist with Track URIs </h1>\n \
            </body></html>"
     
     for i in range(len(playlist)):
@@ -47,7 +47,7 @@ def spotify(req: func.HttpRequest) -> func.HttpResponse:
 
 
     
-    liked_songs_playlist = sp.current_user_saved_tracks() # Get useres current liked songs
+    liked_songs_playlist = sp.current_user_saved_tracks() # Get users current liked songs
     dance_playlist = show_dancesongs_in_playlist(liked_songs_playlist, sp)
     
     #return func.HttpResponse(f"{dance_playlist}", status_code=200) 

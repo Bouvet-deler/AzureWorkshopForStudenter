@@ -9,7 +9,7 @@ In this tutorial, we will use Python and the web framework FastAPI to upload a f
 There are few things that we have to install before we start this tutorial.
 
 1. [Visual Studio Code](https://code.visualstudio.com/download)
-2. An Azure account with some dineros (this will be provided for you)
+2. An Azure account with some credits (you will get a yearly credit with student subscription)
 3. [Python 3.10 or higher](https://www.python.org/downloads/release/python-31011/) (link is for 3.10.11)
 4. [Git](https://git-scm.com/downloads)
 
@@ -36,13 +36,13 @@ There are a few things we need to do in Azure before we can start to code. Open 
 
 Here, you will see this beautiful website
 
-![Azure portal home page](/BilderIBlobstorage/images/azure_portal.png)
+![Azure portal home page](/docs/images/azure_portal.png)
 
 There are a multitude of things that you can do, but we will do two thing; create a Azure Resource Group and Azure Storage Account
 
 ### Create Azure Resource Group
 
-Azure Resource Group is a collection of resources. Usually, a resource group contains resources that have something to do with eachother. But, you might wonder; what is a _resource_? A resource can be thought of as a service that Azure provides for you. One resource that Azure provides, that you might have heard of is virtual machines. Instead of having to use your computer's hardware to run a virtual machine, Microsoft uses its computers, or rather servers, to host a virtual machine for you. You only need to create it based on your needs and install the software and tools that you need.
+Azure Resource Group is a collection of resources. Usually, a resource group contains resources that have something to do with each other. But, you might wonder; what is a _resource_? A resource can be thought of as a service that Azure provides for you. One resource that Azure provides, that you might have heard of is virtual machines. Instead of having to use your computer's hardware to run a virtual machine, Microsoft uses its computers, or rather servers, to host a virtual machine for you. You only need to create it based on your needs and install the software and tools that you need.
 
 So, lets start by creating a resource group. From the home page you can see that on the top of the screen, next to the large **+** icon, there is a Tesseract-looking object that says Resource groups. Click on it (and the world will not end).
 
@@ -56,21 +56,21 @@ Great, you have now created a resource group in which you can store your resourc
 
 Now that you have created your Resource Group, you are sent to this page
 
-![Azure portal after resource group creation](/BilderIBlobstorage/images/azure_portal_after_resource_group_creation.png)
+![Azure portal after resource group creation](/docs/images/azure_portal_after_resource_group_creation.png)
 
 Press on the resource group that you just created. We are now inside the resource group and here, we will create an Azure Storage Account.
 
-A Storage Account is an account that contains all of the storage possibilities that Azure provides. If has various storage types, and the one we will use is called _blob storage_. Blob storage is an unstructured storage that can contains millions of files. Thing of it as your Downloads folder, where everything you have downloaded from the internet is. If you dont empty it often, or at all, it becomes unstructered with many different types of files. Blob storage is similar to that.
+A Storage Account is an account that contains all of the storage possibilities that Azure provides. If has various storage types, and the one we will use is called _blob storage_. Blob storage is an unstructured storage that can contains millions of files. Thing of it as your Downloads folder, where everything you have downloaded from the internet is. If you don't empty it often, or at all, it becomes unstructured with many different types of files. Blob storage is similar to that.
 
 Now, you should have this page open in Azure portal
 
-![Azure portal create resource](/BilderIBlobstorage/images/azure_portal_create_resource.png)
+![Azure portal create resource](/docs/images/azure_portal_create_resource.png)
 
 Click on the blue button on the middle of the screen that says **Create resources**. From there, if you cannot see Storage account as one of the options, search **Storage account** in the search field. It has an image of a table with a green background. Click on it. In the appearing page, click on the blue button named **Create**.
 
 A new page arrives, which looks like this
 
-![Azure portal create storage account](/BilderIBlobstorage/images/azure_portal_create_storage_account.png)
+![Azure portal create storage account](/docs/images/azure_portal_create_storage_account.png)
 
 Double check that the resource group that you created previously is named in the **Resource group** field. Fill out the **Storage account name** field, with **ONLY** lowercase letters and numbers. Make sure that the **Region** field is set to _Norway East_. Leave everything else as is and press the blue button at the bottom named **Review**. Then, when it becomes blue, press the button named **Create** on the next page that comes up.
 
@@ -80,7 +80,7 @@ From here we need to ensure that the storage account is accessible to us, i.e., 
 
 After you pressed the blue **Go to resource** button, you should be on a page like this
 
-![Azure portal storage account home page](/BilderIBlobstorage/images/azure_portal_storage_account_home_page.png)
+![Azure portal storage account home page](/docs/images/azure_portal_storage_account_home_page.png)
 
 On the middle of the page to the right, there is a small headliner that says Security. Click it and many options appear. Under the **Allow Blob anonymous access** field, choose the Enabled radio button, then click on Save at the top of the page. After that, press the **Overview** button that is the top option on the left side.
 
@@ -211,7 +211,7 @@ Now, we need to go back to the Azure portal. From there, we need a _connection s
 
 The _blob_service_client_ is using the function that comes with the azure-blob-storage package to connect to the storage account via the connection string.
 
-**To quickly explain try/except statement**. It essentially is a try and fail approach. In the try block, Python will try and perform the code. It is fails somewhere in the code, it will automatically go to the except statement (which is coming later), and display the error that occured.
+**To quickly explain try/except statement**. It essentially is a try and fail approach. In the try block, Python will try and perform the code. It is fails somewhere in the code, it will automatically go to the except statement (which is coming later), and display the error that occurred.
 
 From there, we can create a container inside our storage account where we will actually store our files. Type this in the file, and **remember to keep it inside the try statement**
 
@@ -250,7 +250,7 @@ Type this in the function and remember to be **keep it inside the try statement*
 
 Now, we can actually do what we want; **to try and upload our file to the storage account and specified container**
 
-Here, we get the container that we just created and in an orderly fashion, we are trying to read in the file data and upload it to the container that we created. If this fails in some way, Python will give us an error message which contains the error that occured. If everything goes as planned, we will get the message that is returned on a new webpage that has the _/uploadfile/_ path in the URL.
+Here, we get the container that we just created and in an orderly fashion, we are trying to read in the file data and upload it to the container that we created. If this fails in some way, Python will give us an error message which contains the error that occurred. If everything goes as planned, we will get the message that is returned on a new webpage that has the _/uploadfile/_ path in the URL.
 
 And lastly for this function, we need to have a except statement for the try statement we had in the start
 
@@ -327,15 +327,15 @@ Copy and paste the link into a browser's address bar, or hold CTRL (CMD on macOS
 
 This will open a webpage that looks like this
 
-![FastAPI webpage](/BilderIBlobstorage/images/fastapi_webpage.png)
+![FastAPI webpage](/docs/images/fastapi_webpage.png)
 
 Here, let us try and upload a file to our container in Azure. Choose a file and click on submit, and if you get this webpage back
 
-![FastAPI completed upload](/BilderIBlobstorage/images/fastapi_completed_upload.png)
+![FastAPI completed upload](/docs/images/fastapi_completed_upload.png)
 
 Then you have done it! **Congratulations, you have uploaded a file to Azure**.
 
-Pretty cool, right? Maybe not, I dont know, but I find it interesting that there is a file in the clouds that you have uploaded, but don't really know where is....
+Pretty cool, right? Maybe not, I don't know, but I find it interesting that there is a file in the clouds that you have uploaded, but don't really know where is....
 
 Anyway, if we go back to the Azure portal (if you closed it again, shame on you) and press the **Container** button on the left side under **Data storage**, you will get a list of all the containers that have been created inside your storage account. In that list, there should be a container with the name you specified in our code. If you click on that container, there should be a file, which is the file that you uploaded! If you click on the file and choose **Edit**, four options to the right of **Overview** in the pop-up window, you will see the file that you uploaded. If it is a image, you will se the image and if it is text or code, than that will appear.
 
@@ -379,12 +379,12 @@ Remove everything that is inside the _function_app.py_ file and replace it with
 ```
 import azure.functions as func
 
-from src.upload_file_to_azure_storage import app as fastapi_app
+from upload_file_to_azure_storage import app as fastapi_app
 
 app = func.AsgiFunctionApp(app=fastapi_app, http_auth_level=func.AuthLevel.ANONYMOUS)
 ```
 
-Here, we tell the Azure Function to use the FastAPI web framework from the other Python file as the main file to run. If you have called your file something else than replace _upload_file_to_azure_storage_ with the name of your file.
+Here, we tell the Azure Function to use the FastAPI web framework from the other Python file as the main file to run. If you have called your file something else then replace _upload_file_to_azure_storage_ with the name of your file.
 
 Now, we need to make a change to the _host.json_ and add that the function should run on a http trigger, which is what we choose as the event on which the Azure Function will run the code.
 
@@ -462,7 +462,7 @@ For detailed output, run func with --verbose flag.
 
 If a pop-up window similar to the image below appears
 
-![Azure Function error when starting deployment](/BilderIBlobstorage/images/azure_function_error_when_starting.png)
+![Azure Function error when starting deployment](/docs/images/azure_function_error_when_starting.png)
 
 Then you can press **Debug Anyways**
 
@@ -500,12 +500,12 @@ And what do you see? The same webpage that we had when we were running locally! 
 
 ## Clean up
 
-It is always smart to delete unused resources, as they might be spending your dinerios. The awesome thing with Azure, is that if you delete a resource group, all the resources within that group is also deleted.
+It is always smart to delete unused resources, as they might be spending your credits. The awesome thing with Azure, is that if you delete a resource group, all the resources within that group is also deleted.
 
 So, you have left the Azure portal, go back to it or if you still have it open, press the **Microsoft Azure** name at the top right of the page. Click on **Resource groups** and now you might see that there are two resource groups. One which we created in the begining and another one, which is the one that has been created when we deployed our function app to the cloud. Now we have our function app in one resource group and storage account and blob container in another group. Since it it possible to move resources between resource groups, this is not a big issue. Just remember to clean up afterwards and move the resources around to make it as you wish, or start by creating the function app in Azure first and then work on it locally.
 
 Click on the resource group that you made want to delete. To the right of the **+ Create** button, there is a button with a trash can named **Delete resource group**. Press that, and you will get a pop-up window that shows all the resources in the resource group. Copy the resource groups name and paste it at the bottom of the pop-up window and press delete. This process might take some time, but you will get a notification when it has completed. You can delete multiple resource groups at the same time, so just go to the other resource group and delete that as well. You can go back by pressing the **Microsoft Azure** name at the top right (even while it is deleting the resource group(s)). If you click on **Resource groups** after the receiving the notification, the resource group(s) are gone and so are all the resources.
 
-If you want to doublecheck that your resources are gone, press the big yellow key named **Subscriptions** and select the subscription that is in the list. In the navigation bar on the left, go down to _Settings_ and press **Resource groups** to see that it is empty. Then, press **Resources** to see that it is also empty, i.e., both resource groups and corresponing resources have been deleted.
+If you want to doublecheck that your resources are gone, press the big yellow key named **Subscriptions** and select the subscription that is in the list. In the navigation bar on the left, go down to _Settings_ and press **Resource groups** to see that it is empty. Then, press **Resources** to see that it is also empty, i.e., both resource groups and corresponding resources have been deleted.
 
 I hope you enjoyed this tutorial!
