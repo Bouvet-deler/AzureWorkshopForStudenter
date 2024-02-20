@@ -500,7 +500,7 @@ And what do you see? The same webpage that we had when we were running locally! 
 
 ## Clean up
 
-It is always smart to delete unused resources, as they might be spending your dinerios. The awesome thing with Azure, is that if you delete a resource group, all the resources within that group is also deleted.
+It is always smart to delete unused resources, as they might be spending your credits. The awesome thing with Azure, is that if you delete a resource group, all the resources within that group is also deleted.
 
 So, you have left the Azure portal, go back to it or if you still have it open, press the **Microsoft Azure** name at the top right of the page. Click on **Resource groups** and now you might see that there are two resource groups. One which we created in the begining and another one, which is the one that has been created when we deployed our function app to the cloud. Now we have our function app in one resource group and storage account and blob container in another group. Since it it possible to move resources between resource groups, this is not a big issue. Just remember to clean up afterwards and move the resources around to make it as you wish, or start by creating the function app in Azure first and then work on it locally.
 
