@@ -3,7 +3,7 @@
 This repository contains four different tutorials in Azure Functions, in both Python and C#. 
 
 ## Azure Function Playliste
-Forklaring
+This guide provides instructions on setting up a Spotify app with Azure Functions using Python 3.9 and Visual Studio Code. It provides step-by-step instructions on creating a Spotify app, obtaining credentials, connecting it to the Azure Function, and deploying the updated code to Azure. 
 
 ## Bilder i Blob Storage
 This guide provides a brief overview of Azure's capabilities and its integration with Visual Studio Code. You'll gain insights into Azure Storage Account, Resource Groups, and Azure Functions. The tutorial guides you through the creation of a simple web page that allows for the uploading of files to an Azure Blob Storage within an Azure Storage Account. This guide includes a Python script that utilises the web framework FastAPI to upload a file. 
