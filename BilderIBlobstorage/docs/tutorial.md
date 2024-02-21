@@ -36,7 +36,7 @@ There are a few things we need to do in Azure before we can start to code. Open 
 
 Here, you will see this beautiful website
 
-![Azure portal home page](/docs/images/azure_portal.png)
+![Azure portal home page](/BilderIBlobstorage/docs/images/azure_portal.png)
 
 There are a multitude of things that you can do, but we will do two thing; create a Azure Resource Group and Azure Storage Account
 
@@ -56,7 +56,7 @@ Great, you have now created a resource group in which you can store your resourc
 
 Now that you have created your Resource Group, you are sent to this page
 
-![Azure portal after resource group creation](/docs/images/azure_portal_after_resource_group_creation.png)
+![Azure portal after resource group creation](/BilderIBlobstorage/docs/images/azure_portal_after_resource_group_creation.png)
 
 Press on the resource group that you just created. We are now inside the resource group and here, we will create an Azure Storage Account.
 
@@ -64,13 +64,13 @@ A Storage Account is an account that contains all of the storage possibilities t
 
 Now, you should have this page open in Azure portal
 
-![Azure portal create resource](/docs/images/azure_portal_create_resource.png)
+![Azure portal create resource](/BilderIBlobstorage/docs/images/azure_portal_create_resource.png)
 
 Click on the blue button on the middle of the screen that says **Create resources**. From there, if you cannot see Storage account as one of the options, search **Storage account** in the search field. It has an image of a table with a green background. Click on it. In the appearing page, click on the blue button named **Create**.
 
 A new page arrives, which looks like this
 
-![Azure portal create storage account](/docs/images/azure_portal_create_storage_account.png)
+![Azure portal create storage account](/BilderIBlobstorage/docs/images/azure_portal_create_storage_account.png)
 
 Double check that the resource group that you created previously is named in the **Resource group** field. Fill out the **Storage account name** field, with **ONLY** lowercase letters and numbers. Make sure that the **Region** field is set to _Norway East_. Leave everything else as is and press the blue button at the bottom named **Review**. Then, when it becomes blue, press the button named **Create** on the next page that comes up.
 
@@ -80,7 +80,7 @@ From here we need to ensure that the storage account is accessible to us, i.e., 
 
 After you pressed the blue **Go to resource** button, you should be on a page like this
 
-![Azure portal storage account home page](/docs/images/azure_portal_storage_account_home_page.png)
+![Azure portal storage account home page](/BilderIBlobstorage/docs/images/azure_portal_storage_account_home_page.png)
 
 On the middle of the page to the right, there is a small headliner that says Security. Click it and many options appear. Under the **Allow Blob anonymous access** field, choose the Enabled radio button, then click on Save at the top of the page. After that, press the **Overview** button that is the top option on the left side.
 
@@ -327,11 +327,11 @@ Copy and paste the link into a browser's address bar, or hold CTRL (CMD on macOS
 
 This will open a webpage that looks like this
 
-![FastAPI webpage](/docs/images/fastapi_webpage.png)
+![FastAPI webpage](/BilderIBlobstorage/docs/images/fastapi_webpage.png)
 
 Here, let us try and upload a file to our container in Azure. Choose a file and click on submit, and if you get this webpage back
 
-![FastAPI completed upload](/docs/images/fastapi_completed_upload.png)
+![FastAPI completed upload](/BilderIBlobstorage/docs/images/fastapi_completed_upload.png)
 
 Then you have done it! **Congratulations, you have uploaded a file to Azure**.
 
@@ -462,7 +462,7 @@ For detailed output, run func with --verbose flag.
 
 If a pop-up window similar to the image below appears
 
-![Azure Function error when starting deployment](/docs/images/azure_function_error_when_starting.png)
+![Azure Function error when starting deployment](/BilderIBlobstorage/docs/images/azure_function_error_when_starting.png)
 
 Then you can press **Debug Anyways**
 
