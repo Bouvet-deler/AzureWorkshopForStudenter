@@ -18,7 +18,7 @@ There are few things that we have to install before we start this tutorial.
 Some links that can be important to remember/keep open
 
 - [Azure portal](https://portal.azure.com/#home)
-- [GitHub repository for this tutorial](https://github.com/Burhan-Mohammad-Sarfraz/upload-file-to-azure-blob-storage-with-python-and-fastapi-and-azure-functions/tree/main)
+- [GitHub repository for this tutorial](https://github.com/Bouvet-deler/AzureWorkshopForStudenter/tree/main/BilderIBlobstorage)
 
 ## Create a workspace
 
@@ -148,7 +148,7 @@ This should install a bunch of packages, which is a good sign. Now, we can actua
 
 ## The fun part
 
-Now, we can try and make our code.
+Now, we can try and make our code. Start by creating a new file with your preferred name and give it a _.py_ ending.
 
 Firstly, we need to import the packages we just installed.
 
