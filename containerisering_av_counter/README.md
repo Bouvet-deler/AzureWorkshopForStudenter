@@ -14,7 +14,7 @@ Det du trenger er:
 4. Noe å bygge til en container
 
 ### Hallo, Docker! 
-I denne modlulen har vi gitt en veldig enkel .NET app som gir en enkel teller eller ta ditt lokale prosjekt ut i en container! 
+I denne modulen har vi gitt en veldig enkel .NET app som gir en enkel teller eller ta ditt lokale prosjekt ut i en container! 
 
 Det hele vil foregå i filen `Dockerfile` hvor man skal skrive en "oppskrift" som Docker skal kjøre etter. Den kan se slik ut:
 
