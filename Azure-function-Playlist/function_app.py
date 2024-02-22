@@ -31,7 +31,7 @@ def write_to_playlist(playlist):
     return html_string
 
 
-@app.route(route="azure_function_guide")
+@app.route(route="spotify")
 def spotify(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Running the spotify function')
 
