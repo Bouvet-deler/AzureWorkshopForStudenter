@@ -23,7 +23,8 @@ Go to this site and follow the steps until "Clean up the resources"
 3. Go to Dashboard, click on Create an app button and enter the following:
    - App Name: My App
    - App Description: This is my first Spotify app
-   - Website: The url where your Azure function runs. Find it by running your Azure Function. Through F5 or the Run and Debug icon in the left-hand side Activity bar. In the terminal (output) you can find the correct URL
+   - Website: The url where your Azure function runs, in Azure. You can find it in the Azure Portal, in the funciton app.
+     Example: https://the_name_of_your_function_app.azurewebsites.net/api/http_trigger
    - Redirect URI: Same as website
    - Which API/SDKs are you planning to use: Web API
 4. Save
