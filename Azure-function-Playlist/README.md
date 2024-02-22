@@ -54,3 +54,11 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs
 2. Click on the Azure Function icon under Workspaces, click on Deploy to Function App
 3. Choose your subscription, the correct resources and functions.
 4. Click on Deploy
+
+
+# Further implementation with the use of Spotify API
+- Further documentation on the Python Spotify labrary can be found at [https://spotipy.readthedocs.io/en/2.22.1/](https://spotipy.readthedocs.io/en/2.22.1/)
+- You can also find more information at [https://developer.spotify.com/documentation/web-api](https://developer.spotify.com/documentation/web-api)
+- The file spotify_ideas.py contain the code to get information from a playlist, given a URL. 
+
+
