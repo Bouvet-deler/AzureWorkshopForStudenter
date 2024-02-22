@@ -12,4 +12,4 @@ This guide provides a brief overview of Azure's capabilities and its integration
 This guide offers a concise introduction to Azure Functions and demonstrates their practical application. Throughout this tutorial, you'll construct a list of potential decision outcomes, from which the script will then select and return a random choice. This will be done using Azure Function, so you will always have the option to ask the "cloud" what you should choose. Additionally, as the tutorial utilizes C#, you'll gain valuable insights into this programming language.
 
 ## Containerisering av counter
-Forklaring
+This guide introduces Docker containerization for beginners, offering a solution for running apps on various servers regardless of the local environment's constraints. It explains Docker's functionality and provides a step-by-step process for creating a Docker container for a .NET app. Users are guided through writing a Dockerfile, building the Docker image, and running it locally. Additionally, the guide covers uploading the Docker image to Azure Container Registry (ACR) for cloud deployment
