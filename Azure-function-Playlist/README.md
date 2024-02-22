@@ -59,6 +59,6 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs
 # Further implementation with the use of Spotify API
 - Further documentation on the Python Spotify labrary can be found at [https://spotipy.readthedocs.io/en/2.22.1/](https://spotipy.readthedocs.io/en/2.22.1/)
 - You can also find more information at [https://developer.spotify.com/documentation/web-api](https://developer.spotify.com/documentation/web-api)
-- The file spotify_ideas.py contain the code to get information from a playlist, given a URL. 
+- There are also information found at: [https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50)
 
 
