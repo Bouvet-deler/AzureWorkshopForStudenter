@@ -27,7 +27,7 @@ Go to this site and follow the steps until "Clean up the resources"
      Example: https://the_name_of_your_function_app.azurewebsites.net/api/http_trigger
    - Redirect URI: Same as website
    - Which API/SDKs are you planning to use: Web API
-4. Save
+4. Save 
 5. Dashboard => Click on your app => Settings
    In settings you can find the Client ID and Client secret you will need to connect you Azure function to Spotify.
 
@@ -35,10 +35,14 @@ Go to this site and follow the steps until "Clean up the resources"
 
 1. Copy the code from function_app.py and paste it into your function_app.py file.
 2. In the terminal: pip install spotipy
-3. Replace the client_id with your ClientID from Spotify
-4. Replace the client_secret with your Client secret
-5. Replace the redirect_uri with your own URI
-6. Run the app through pressing F5 or the Run and Debug icon in the left-hand side Activity bar.
+3. In the requirements.txt file add this line: spotipy
+4. In function_app.py:
+   - Remove the generated text.
+   - Replace the code with the code found at: Azure-function-Playlist/function_app.py 
+6. Replace the client_id with your ClientID from Spotify
+7. Replace the client_secret with your Client secret
+8. Replace the redirect_uri with your own URI
+9. Run the app through pressing F5 or the Run and Debug icon in the left-hand side Activity bar.
 
 # Upload the updated code to Azure
 
