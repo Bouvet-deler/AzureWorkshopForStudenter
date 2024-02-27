@@ -28,7 +28,7 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs
    - App Name: My App
    - App Description: This is my first Spotify app
    - Website: The local host for your Azure function. Find it by running your Azure Funciton: Run -> Start Debugging. In the terminal you can find the correct URL. Also available on your azure functions dashboard
-      Ridirect URI: Equal as website e.g https://<YOUR_WEBISTE_NAME>.azurewebsites.net/api/spotify
+      Redirect URI: Equal as website e.g https://<YOUR_WEBISTE_NAME>.azurewebsites.net/api/spotify
    - Redirect URI: Same as website
    - Which API/SDKs are you planning to use: Web API
 4. Save 
@@ -37,16 +37,15 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs
 
 
 # Connecting your Function App with Spotify
-1. Copy the code from function_app.py and paste it into your function_app.py file.
-2. In the terminal: pip install spotipy
-3. In the requirements.txt file add this line: spotipy
-4. In function_app.py:
+1. In the terminal: pip install spotipy
+2. In the requirements.txt file add this line: spotipy
+3. In function_app.py:
    - Remove the generated text.
    - Replace the code with the code found at: Azure-function-Playlist/function_app.py 
-6. Replace the client_id with your ClientID from Spotify
-7. Replace the client_secret with your Client secret
-8. Replace the redirect_uri with your own URI
-9. Run the app through pressing F5 or the Run and Debug icon in the left-hand side Activity bar.
+4. Replace the client_id with your ClientID from Spotify
+5. Replace the client_secret with your Client secret
+6. Replace the redirect_uri with your own URI
+7. Run the app through pressing F5 or the Run and Debug icon in the left-hand side Activity bar.
 
 
 # Upload the updated code to Azure
@@ -57,7 +56,7 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs
 
 
 # Further implementation with the use of Spotify API
-- Further documentation on the Python Spotify labrary can be found at [https://spotipy.readthedocs.io/en/2.22.1/](https://spotipy.readthedocs.io/en/2.22.1/)
+- Further documentation on the Python Spotify library can be found at [https://spotipy.readthedocs.io/en/2.22.1/](https://spotipy.readthedocs.io/en/2.22.1/)
 - You can also find more information at [https://developer.spotify.com/documentation/web-api](https://developer.spotify.com/documentation/web-api)
 - There are also information found at: [https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50)
 
